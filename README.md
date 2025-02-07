@@ -15,17 +15,22 @@ Here is a simple example to help get you started:
 ```python
 from colorize import Colorize
 
-print(Colorize("1").bold().cyan(), "What is your name?")
+print(Colorize(" 1 ").on_cyan() + Colorize(" What is your name?").bold())
 name = input("> ")
+print()
 
-print("Hello,", Colorize(name).bold().color256(219) + "!")
+print("Hi", Colorize(name).bold().color256(213) + "!")
+print()
 
-print(Colorize("Press CTRL+C to break the loop!").color256(255).on_cyan())
 while 1:
+    print(Colorize("Woah... we are stuck inside a loop!").color256(220))
+    print(Colorize("Press CTRL+C to break the loop!").color256(0).on_green())
+
     try:
         _ = input()
     except KeyboardInterrupt:
         break
+print()
 
-print("Hello,", Colorize("World").italic() + "!")
+print(Colorize("All done! I hope you find this project useful!").italic())
 ```
