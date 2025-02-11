@@ -8,10 +8,9 @@ Examples
 --------
 
 >>> from colorize import Colorize
->>>
 >>> Colorize("error").bold().red()
 """
 
-from .colorize import Colorize
+from ._colorize import Colorize
 
 __all__ = ("Colorize",)

@@ -7,7 +7,7 @@ Use ANSI color codes to color/style text in the terminal.
 This project is not on PyPI, but you can still use `pip` to install it:
 
 ```bash
-pip install --depth=1 git+https://github.com/nicdgonzalez/colorize.git
+pip install git+https://github.com/nicdgonzalez/colorize.git
 ```
 
 Here is a simple example to help get you started:
