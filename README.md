@@ -40,7 +40,7 @@ print()
 print(Colorize("All done! I hope you find this project useful!").italic())
 ```
 
-For an example of this library in action, see [nicdgonzalez/status](../status).
+For an example of this library in action, see [nicdgonzalez/status](../../../status).
 
 ## Performance
 
