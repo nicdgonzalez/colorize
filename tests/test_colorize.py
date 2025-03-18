@@ -5,7 +5,6 @@ from colorize import Colorize
 
 # fmt: off
 class TestColorize(unittest.TestCase):
-
     def test_foreground(self) -> None:
         self.assertEqual(str(Colorize("foo").black()), "\033[30mfoo\033[39m")
         self.assertEqual(str(Colorize("foo").red()), "\033[31mfoo\033[39m")

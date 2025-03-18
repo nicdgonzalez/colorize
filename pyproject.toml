@@ -1,11 +1,9 @@
 [build-system]
-requires = ["setuptools", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
 
-[project]
-name = "colorize"
-version = "0.1.0"
-requires-python = ">=3.12"
-
-[tool.setuptools.packages]
-find = { where = ["src"] }
+[tool.maturin]
+profile = "release"
+features = ["pyo3/extension-module"]  # Skip linking against `libpython.so`.
+python-source = "python"  # The directory name for the Python wrapper.
+module-name = "colorize._colorize"

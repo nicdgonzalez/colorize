@@ -1,0 +1,12 @@
+[package]
+name = "colorize"
+version = "0.2.0"
+edition = "2021"
+
+[lib]
+name = "_colorize"
+crate-type = ["cdylib"]  # To produce a shared library that Python can import.
+
+[dependencies]
+pyo3 = { version = "0.23.4", features = ["abi3-py38"] }
+supports-color = "3.0.2"
