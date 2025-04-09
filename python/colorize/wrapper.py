@@ -223,7 +223,7 @@ class Colorize:
             case str():
                 return str(self) + other
             case _:
-                raise NotImplementedError
+                return NotImplemented
 
     def __radd__(self, other: object) -> str:
         match other:
@@ -232,7 +232,7 @@ class Colorize:
             case str():
                 return other + str(self)
             case _:
-                raise NotImplementedError
+                return NotImplemented
 
     def __eq__(self, other: object) -> bool:
         match other:
@@ -241,7 +241,7 @@ class Colorize:
             case str():
                 return str(self) == other
             case _:
-                raise NotImplementedError
+                return NotImplemented
 
     def __ne__(self, other: object) -> bool:
         match other:
@@ -250,15 +250,7 @@ class Colorize:
             case str():
                 return str(self) != other
             case _:
-                raise NotImplementedError
+                return NotImplemented
 
     def __iadd__(self, other: object) -> "Colorize":
-        match other:
-            case Colorize():
-                self._internal += str(other)
-            case str():
-                self._internal += other
-            case _:
-                raise NotImplementedError
-
-        return self
+        return NotImplemented

@@ -7,3 +7,6 @@ profile = "release"
 features = ["pyo3/extension-module"]  # Skip linking against `libpython.so`.
 python-source = "python"  # The directory name for the Python wrapper.
 module-name = "colorize._colorize"
+
+[tool.ruff]
+line-length = 79
