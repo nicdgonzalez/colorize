@@ -30,3 +30,5 @@ Example
 """
 
 from .wrapper import Colorize
+
+__all__ = ("Colorize",)
